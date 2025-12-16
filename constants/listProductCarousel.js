@@ -10,7 +10,7 @@ export const PRODUCT_SLIDES_CAROUSEL = [
   {
     id: 'product_2',
     image:
-      'https://plus.unsplash.com/premium_photo-1661458436994-5a1d36c28756?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=1201&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     name: 'PRODUCT NAME 2.',
     description: 'Lorem ipsum, dolor sit.',
     offer: 'Special Offer - UP to 50% OFF',
@@ -34,7 +34,7 @@ export const PRODUCT_SLIDES_CAROUSEL = [
   {
     id: 'product_5',
     image:
-      'https://images.unsplash.com/photo-1656782047936-4ba73fac0fe4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1517439270744-8d9287c2f8f8?q=80&w=1103&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     name: 'PRODUCT NAME 5.',
     description: 'Lorem ipsum, dolor sit.',
     offer: 'Special Offer - UP to 50% OFF',

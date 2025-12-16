@@ -23,8 +23,8 @@ export default function NavHeader() {
 
   return (
     <nav>
-      <div className="py-[16px]">
-        <div className="container mx-auto flex w-full items-center justify-between">
+      <div className="py-[16px] ">
+        <div className="container mx-auto flex w-full items-center justify-between ">
           <div className="flex items-center gap-[8px]">
             <div className="hamburger-menu">
               <span></span>
