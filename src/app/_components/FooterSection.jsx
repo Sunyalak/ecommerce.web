@@ -1,5 +1,5 @@
 import React from 'react';
-import { PhoneIcon, PinIcon, WhatAppsIcon } from '../../../public/icons/icon-svg';
+import { EmailIcon, PhoneIcon, PinIcon, WhatAppsIcon } from '../../../public/icons/icon-svg';
 import Link from 'next/link';
 import Image from 'next/image';
 import { IMAGES } from '../../../public/images/images';
@@ -7,7 +7,7 @@ import { IMAGES } from '../../../public/images/images';
 export default function FooterSection() {
   return (
     <footer className="relative mt-[50px] h-[auto] w-full bg-[var(--primary-color)] text-[var(--white-color)]">
-      <div className="container mx-auto">
+      <div className="container mx-auto z-[1] relative">
         <div className="flex gap-[50px] py-[50px]">
           <div className="flex flex-col gap-[16px]">
             <h2 className="[font-size:var(--h1-font-size)] font-bold">{'Ecommerce.Web'}</h2>
@@ -17,7 +17,7 @@ export default function FooterSection() {
                 <WhatAppsIcon className="h-5 w-5 text-[var(--white-color)]" />
                 <figcaption className="flex flex-col">
                   <span>{'Whats App'}</span>
-                  <Link href="tel:+12 123-456-789">
+                  <Link href="tel:+12 123-456-789" className="hover:text-[var(--text-body)]">
                     <span>{'+12 123-456-789'}</span>
                   </Link>
                 </figcaption>
@@ -27,8 +27,18 @@ export default function FooterSection() {
                 <PhoneIcon className="h-5 w-5 text-[var(--white-color)]" />
                 <figcaption className="flex flex-col">
                   <span>{'Call'}</span>
-                  <Link href="tel:+12 123-456-789">
+                  <Link href="tel:+12 123-456-789" className="hover:text-[var(--text-body)]">
                     <span>{'+12 123-456-789'}</span>
+                  </Link>
+                </figcaption>
+              </figure>
+
+              <figure className="flex gap-[8px]">
+                <EmailIcon className="h-5 w-5 text-[var(--white-color)]" />
+                <figcaption className="flex flex-col">
+                  <span>{'Email'}</span>
+                  <Link href="mailto:+12 123-456-789" className="hover:text-[var(--text-body)]">
+                    <span>{'ecommerce.web@example.com'}</span>
                   </Link>
                 </figcaption>
               </figure>
@@ -105,7 +115,7 @@ export default function FooterSection() {
         <hr className="h-[1px] w-full border-none bg-[var(--secondary-color)]" />
         <div className="p-[16px] text-center">{`© ${new Date().getFullYear()} Ecommerce.Web. All rights reserved.`}</div>
       </div>
-      <figure className="absolute bottom-0 right-0 opacity-[0.2] w-[800px] aspect-square">
+      <figure className="absolute bottom-0 right-0 opacity-[0.2] w-[800px] aspect-square z-[0]">
         <Image src={IMAGES.BG_FOOTER} alt="BG-Footer" />
       </figure>
     </footer>
