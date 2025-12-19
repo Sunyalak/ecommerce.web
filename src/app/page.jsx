@@ -6,10 +6,12 @@ import LayoutSectionList from './_components/LayoutSectionList';
 import ProductCardItem from './_components/ProductCardItem';
 import CardBrandsOffer from './_components/CardBrandsOffer';
 import CardOfferDiscount from './_components/CardOfferDiscount';
+import ListFilterCategory from './_components/ListFilterCategory';
 
 export default function HomePage() {
   return (
     <>
+    <ListFilterCategory/>
       <section className="selection-carousel-slide py-[16px]">
         <div className="container mx-auto">
           <CarouselSlides />

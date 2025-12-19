@@ -6,8 +6,8 @@ import { IMAGES } from '../../../public/images/images';
 
 export default function FooterSection() {
   return (
-    <footer className="relative mt-[50px] h-[auto] w-full bg-[var(--primary-color)] text-[var(--white-color)]">
-      <div className="container mx-auto z-[1] relative">
+    <footer className="relative mt-[50px] h-[auto] w-full bg-[var(--background-sidebar)] text-[var(--white-color)]">
+      <div className="relative z-[1] container mx-auto">
         <div className="flex gap-[50px] py-[50px]">
           <div className="flex flex-col gap-[16px]">
             <h2 className="[font-size:var(--h1-font-size)] font-bold">{'Ecommerce.Web'}</h2>
@@ -17,7 +17,7 @@ export default function FooterSection() {
                 <WhatAppsIcon className="h-5 w-5 text-[var(--white-color)]" />
                 <figcaption className="flex flex-col">
                   <span>{'Whats App'}</span>
-                  <Link href="tel:+12 123-456-789" className="hover:text-[var(--text-body)]">
+                  <Link href="tel:+12 123-456-789" className="hover:text-[var(--primary-color)]">
                     <span>{'+12 123-456-789'}</span>
                   </Link>
                 </figcaption>
@@ -27,7 +27,7 @@ export default function FooterSection() {
                 <PhoneIcon className="h-5 w-5 text-[var(--white-color)]" />
                 <figcaption className="flex flex-col">
                   <span>{'Call'}</span>
-                  <Link href="tel:+12 123-456-789" className="hover:text-[var(--text-body)]">
+                  <Link href="tel:+12 123-456-789" className="hover:text-[var(--primary-color)]">
                     <span>{'+12 123-456-789'}</span>
                   </Link>
                 </figcaption>
@@ -37,7 +37,7 @@ export default function FooterSection() {
                 <EmailIcon className="h-5 w-5 text-[var(--white-color)]" />
                 <figcaption className="flex flex-col">
                   <span>{'Email'}</span>
-                  <Link href="mailto:+12 123-456-789" className="hover:text-[var(--text-body)]">
+                  <Link href="mailto:+12 123-456-789" className="hover:text-[var(--primary-color)]">
                     <span>{'ecommerce.web@example.com'}</span>
                   </Link>
                 </figcaption>
@@ -58,28 +58,28 @@ export default function FooterSection() {
                 {'Most Popular Categories'}
               </strong>
               <ul className="flex list-disc flex-col gap-[16px] pl-[20px]">
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Category 1'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Category 2'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Category 3'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Category 4'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Category 5'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Category 6'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Category 7'}</Link>
                 </li>{' '}
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Category 8'}</Link>
                 </li>
               </ul>
@@ -90,32 +90,32 @@ export default function FooterSection() {
                 {'Customer Services'}
               </strong>
               <ul className="flex list-disc flex-col gap-[16px] pl-[20px]">
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'About Us'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Team & Conditions'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'FAQ'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Privacy Policy'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'E-waste Policy'}</Link>
                 </li>
-                <li className="hover:text-[var(--text-body)]">
+                <li className="hover:text-[var(--primary-color)]">
                   <Link href="#">{'Cancellation & Return Policy'}</Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <hr className="h-[1px] w-full border-none bg-[var(--secondary-color)]" />
+        <hr className="h-[1px] w-full border-none bg-[#ffffff0a]" />
         <div className="p-[16px] text-center">{`© ${new Date().getFullYear()} Ecommerce.Web. All rights reserved.`}</div>
       </div>
-      <figure className="absolute bottom-0 right-0 opacity-[0.2] w-[800px] aspect-square z-[0]">
+      <figure className="absolute right-0 bottom-0 z-[0] aspect-square w-[800px] opacity-[0.1]">
         <Image src={IMAGES.BG_FOOTER} alt="BG-Footer" />
       </figure>
     </footer>

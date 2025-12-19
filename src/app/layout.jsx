@@ -24,12 +24,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* <nav className="fixed top-0 left-0 w-full bg-[var(--white-color)] z-[100]"> */}
-        <nav>
+        <nav className="fixed top-0 left-0 z-[999] w-full bg-[var(--white-color)] [box-shadow:-1px_-1px_20px_0px_#dddddd]">
           <WelcomeHeaderBar />
           <NavHeader />
         </nav>
-        <main >{children}</main>
-        <FooterSection/>
+        <main>{children}</main>
+        <FooterSection />
       </body>
     </html>
   );
