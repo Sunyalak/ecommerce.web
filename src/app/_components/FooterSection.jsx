@@ -6,7 +6,7 @@ import { IMAGES } from '../../../public/images/images';
 
 export default function FooterSection() {
   return (
-    <footer className="relative mt-[50px] h-[auto] w-full bg-[var(--background-sidebar)] text-[var(--white-color)]">
+    <footer className="relative mt-[50px] h-[auto] w-full bg-[var(--background-sidebar)] text-[var(--white-color)] overflow-hidden">
       <div className="relative z-[1] container mx-auto">
         <div className="flex gap-[50px] py-[50px]">
           <div className="flex flex-col gap-[16px]">
